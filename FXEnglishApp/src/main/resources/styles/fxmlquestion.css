@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+Hbox {
+    fx-spacing: 10px;
+}
+
+Vbox {
+    fx-spacing: 10px;
+    fx-padding: 10px;
+}
+
+.mainFxmlClass {
+
+}

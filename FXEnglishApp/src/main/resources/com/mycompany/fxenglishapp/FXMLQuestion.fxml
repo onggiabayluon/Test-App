@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../styles/fxmlquestion.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.fxenglishapp.FXMLQuestionController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="English Multiple Choice" />
+      <TextField fx:id="txtContent" promptText="Enter Question Content" />
+      <ComboBox fx:id="cbCategories" prefWidth="150.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </ComboBox>
+      <HBox prefHeight="38.0" prefWidth="600.0">
+         <children>
+            <RadioButton fx:id="rdoA" mnemonicParsing="false" text="A" />
+            <TextField fx:id="txtA" />
+         </children>
+      </HBox>
+      <HBox prefHeight="38.0" prefWidth="600.0">
+         <children>
+            <RadioButton fx:id="rdoB" mnemonicParsing="false" text="B" />
+            <TextField fx:id="txtB" />
+         </children>
+      </HBox>
+      <HBox prefHeight="41.0" prefWidth="600.0">
+         <children>
+            <RadioButton fx:id="rdoC" mnemonicParsing="false" text="C" />
+            <TextField fx:id="txtC" />
+         </children>
+      </HBox>
+      <HBox prefHeight="41.0" prefWidth="600.0">
+         <children>
+            <RadioButton fx:id="rdoD" mnemonicParsing="false" text="D" />
+            <TextField fx:id="txtD" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addQuestionHandler" text="Add Question" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Reset" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
